@@ -1,2 +1,20 @@
 src/
 rollup.config.js
+
+# Ignore configuration files
+.babelrc
+.eslint*  # If you have ESLint config files
+*.log     # Ignore log files
+
+# Ignore version control files
+.git/
+.gitignore
+
+# Ignore Node.js dependency folders
+node_modules/
+
+# Ignore temporary or system files
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db

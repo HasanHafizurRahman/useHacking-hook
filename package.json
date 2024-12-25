@@ -1,19 +1,28 @@
 {
   "name": "usehacking",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "dist/index.cjs.js", 
+  "module": "dist/index.esm.js", 
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js", 
+      "require": "./dist/index.cjs.js" 
+    }
+  },
+  "types": "dist/index.d.ts", 
+  "type": "module", 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "start": "node src/cli/cli.js"
+    "build": "rollup -c", 
+    "start": "node src/cli/cli.js", 
+    "test": "echo \"Error: no test specified\" && exit 1" 
   },
   "bin": {
-    "use-hacking": "./src/cli/cli.js"
-},
-  "keywords": [],
-  "author": "",
+    "use-hacking": "./src/cli/cli.js" 
+  },
+  "keywords": ["react", "hook", "hacking", "fun", "terminal"], 
+  "author": "Hasan Hafizur Rahman",
   "license": "ISC",
-  "description": "",
+  "description": "A fun React hook to simulate hacking NASA using HTML and other skills.",
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
@@ -23,7 +32,11 @@
     "rollup": "^4.29.1"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.0.0", 
+    "react-dom": "^18.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   }
 }
