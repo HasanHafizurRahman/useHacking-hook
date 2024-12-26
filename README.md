@@ -89,7 +89,7 @@ The `usehacking` package comes with a CLI tool for quick "hacking" demonstration
 
 ### Usage:
 ```bash
-npx use-hacking
+npx usehacking
 ```
 
 Example Output:
@@ -138,10 +138,3 @@ This package is licensed under the **ISC License**. See the [LICENSE](./LICENSE)
 ## **Author**
 **Hasan Hafizur Rahman**  
 A developer who loves to bring humor and functionality together in React apps.
-
----
-
-This README includes:
-- Installation and usage instructions.
-- Examples for both the hook and CLI tool.
-- Information about customization and contributing.
